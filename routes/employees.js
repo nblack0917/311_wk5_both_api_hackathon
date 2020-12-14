@@ -6,7 +6,7 @@ router.get('/', employeesController.getAllEmployees)
 
 router.get('/:first_name', employeesController.getEmployeeByFirstName)
 
-router.get('/:emp_no', employeesController.getEmployeeById)
+router.get('/id/:emp_no', employeesController.getEmployeeById)
 
 // router.post('/', employeesController.createNewEmployee)
 
