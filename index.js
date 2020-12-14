@@ -1,18 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const employeesRouter = require('./routes/employees');
-
-
-const employeeJoinDepartmentsRouter = require('./routes/employee-join-departments');
-// const salariesRouter = require('./routes/salaries');
-// const departmentsRouter = require('./routes/departments');
-
 const departmentsRouter = require('./routes/departments');
-
+const employeeJoinDepartmentsRouter = require('./routes/employee-join-departments.js');
 const salariesRouter = require('./routes/salaries');
 const departmentEmployeesRouter = require('./routes/dept_emp')
-
-
+// =======
 
 
 const app = express();
