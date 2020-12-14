@@ -1,12 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const usersRouter = require('./routers/employees');
+const employeesRouter = require('./routers/employees');
 
 const app = express();
 
-const port = process.env.PORT || 4001;
-
 app.use(bodyParser.json())
+app.use(employeesRouter)
+
+const port = process.env.PORT || 4001;
 
 app.get('/', (req, res) => {
   res.send('Welcome to our API!')
