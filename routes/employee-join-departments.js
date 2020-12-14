@@ -1,5 +1,5 @@
 const express = require('express')
-const employeeJoinDepartments = require('../controllers/employee-join-departments.js')
+const employeeJoinDepartments = require('../controllers/employee-join-departments')
 const router = express.Router()
 
 
