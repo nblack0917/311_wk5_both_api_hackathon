@@ -4,6 +4,7 @@ const employeesRouter = require('./routes/employees');
 const departmentsRouter = require('./routes/departments');
 const employeeJoinDepartmentsRouter = require('./routes/employee-join-departments.js');
 const salariesRouter = require('./routes/salaries');
+const departmentEmployeesRouter = require('./routes/dept_emp')
 // =======
 
 
@@ -14,6 +15,7 @@ app.use('/employees', employeesRouter)
 app.use('/employee-join-departments', employeeJoinDepartmentsRouter)
 app.use('/departments', departmentsRouter)
 app.use('/salaries', salariesRouter)
+app.use('/dept_emp', departmentEmployeesRouter)
 
 const port = process.env.PORT || 4001;
 
