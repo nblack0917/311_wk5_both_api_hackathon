@@ -2,9 +2,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const employeesRouter = require('./routes/employees');
 const departmentsRouter = require('./routes/departments');
-const employeeJoinDepartmentsRouter = require('./routes/employee-join-departments.js');
+const employeeJoinDepartmentsRouter = require('./routes/employee-join-departments');
 const salariesRouter = require('./routes/salaries');
 const departmentEmployeesRouter = require('./routes/dept_emp')
+const joinAllRouter = require('./routes/join-all')
 // =======
 
 
@@ -16,6 +17,7 @@ app.use('/employee-join-departments', employeeJoinDepartmentsRouter)
 app.use('/departments', departmentsRouter)
 app.use('/salaries', salariesRouter)
 app.use('/dept_emp', departmentEmployeesRouter)
+app.use('/join-all', joinAllRouter)
 
 const port = process.env.PORT || 4001;
 
