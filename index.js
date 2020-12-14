@@ -6,13 +6,8 @@ const employeeJoinDepartmentsRouter = require('./routes/employee-join-department
 
 const salariesRouter = require('./routes/salaries');
 const departmentEmployeesRouter = require('./routes/dept_emp')
-<<<<<<< HEAD
-
-=======
 const departmentManagersRouter = require('./routes/dept_manager')
 const titlesRouter = require('./routes/titles')
-// =======
->>>>>>> c3713608b9220190fb67ce9af4321ecf1dc14d50
 
 
 const app = express();
