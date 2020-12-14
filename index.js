@@ -5,6 +5,8 @@ const departmentsRouter = require('./routes/departments');
 const employeeJoinDepartmentsRouter = require('./routes/employee-join-departments.js');
 const salariesRouter = require('./routes/salaries');
 const departmentEmployeesRouter = require('./routes/dept_emp')
+const departmentManagersRouter = require('./routes/dept_manager')
+const titlesRouter = require('./routes/titles')
 // =======
 
 
@@ -12,10 +14,12 @@ const app = express();
 
 app.use(bodyParser.json())
 app.use('/employees', employeesRouter)
-app.use('/employee-join-departments', employeeJoinDepartmentsRouter)
+app.use('/employee-departments', employeeJoinDepartmentsRouter)
 app.use('/departments', departmentsRouter)
 app.use('/salaries', salariesRouter)
 app.use('/dept_emp', departmentEmployeesRouter)
+app.use('/dept_manager', departmentManagersRouter)
+app.use('/titles', titlesRouter)
 
 const port = process.env.PORT || 4001;
 

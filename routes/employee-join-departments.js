@@ -4,7 +4,7 @@ const router = express.Router()
 
 
 
-router.get('/hi', employeeJoinDepartments.joinWithDepartments)
+router.get('/', employeeJoinDepartments.joinWithDepartments)
 
 
 
