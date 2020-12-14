@@ -13,7 +13,7 @@ const app = express();
 
 app.use(bodyParser.json())
 app.use('/employees', employeesRouter)
-app.use('/employee-join-departments', employeeJoinDepartmentsRouter)
+app.use('/employee-departments', employeeJoinDepartmentsRouter)
 app.use('/departments', departmentsRouter)
 app.use('/salaries', salariesRouter)
 app.use('/dept_emp', departmentEmployeesRouter)

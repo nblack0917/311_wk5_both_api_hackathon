@@ -4,7 +4,9 @@ const router = express.Router()
 
 
 
-router.get('/hi', employeeJoinDepartments.joinWithDepartments)
+router.get('/', employeeJoinDepartments.joinWithDepartments)
+router.get('/id/:emp_no', employeeJoinDepartments.departmentById)
+router.get('/:first_name', employeeJoinDepartments.departmentByName)
 
 
 
