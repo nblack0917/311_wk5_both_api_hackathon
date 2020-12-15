@@ -8,11 +8,6 @@ const salariesRouter = require('./routes/salaries');
 const departmentEmployeesRouter = require('./routes/dept_emp')
 const joinAllRouter = require('./routes/join-all')
 
-=======
-const employeeJoinDepartmentsRouter = require('./routes/employee-join-departments.js');
-
-const salariesRouter = require('./routes/salaries');
-const departmentEmployeesRouter = require('./routes/dept_emp')
 const departmentManagersRouter = require('./routes/dept_manager')
 const titlesRouter = require('./routes/titles')
 
@@ -28,7 +23,6 @@ app.use('/salaries', salariesRouter)
 app.use('/dept_emp', departmentEmployeesRouter)
 
 app.use('/join-all', joinAllRouter)
-=======
 app.use('/dept_manager', departmentManagersRouter)
 app.use('/titles', titlesRouter)
 
