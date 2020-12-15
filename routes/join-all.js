@@ -4,7 +4,9 @@ const router = express.Router()
 
 
 
-router.get('/allinfo', joinAllController.joinAll)
+router.get('/', joinAllController.joinAll)
+router.get('/id/:emp_no', joinAllController.salaryById)
+router.get('/:first_name', joinAllController.salaryByName)
 
 
 

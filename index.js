@@ -11,8 +11,6 @@ const joinAllRouter = require('./routes/join-all')
 const departmentManagersRouter = require('./routes/dept_manager')
 const titlesRouter = require('./routes/titles')
 
-
-
 const app = express();
 
 app.use(bodyParser.json())
@@ -30,9 +28,9 @@ app.use('/titles', titlesRouter)
 const port = process.env.PORT || 4001;
 
 app.get('/', (req, res) => {
-  res.send('Welcome to our API!')
+    res.send('Welcome to our API!')
 })
 
 app.listen(port, () => {
- console.log(`Web server is listening on port ${port}!`);
+    console.log(`Web server is listening on port ${port}!`);
 });
